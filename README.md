@@ -4,7 +4,7 @@ Cliente html para correr desacoplado y sin integración de node js:
 • Descarga el archivo app.html y lee los datos en consola desde el servidor alojado en codesandbox: https://38r91.sse.codesandbox.io/
 
 • Ejecuta directamente el servidor apollo en: https://38r91.sse.codesandbox.io/
-  aplicando:
+  aplicando el resolver del objeto teams:
   
   query {
     teams {
