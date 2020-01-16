@@ -6,7 +6,7 @@ Cliente html para correr desacoplado y sin integración de node js:
 • Ejecuta directamente el servidor apollo en: https://38r91.sse.codesandbox.io/
   aplicando:
   
-  query listTeams {
+  query {
     teams {
       id
       institution
