@@ -1,12 +1,13 @@
 # Vanilla-HTML Client to load data from : Apollo-GraphQL Server (standalone with data)
-Cliente html para correr desacoplado y sin integración de node js:
+Cliente html para correr desacoplado en el navegador sin integración de node js ni apollo server
 
-• Descarga el archivo app.html y lee los datos en consola desde el servidor alojado en codesandbox: https://38r91.sse.codesandbox.io/
+Descarga el archivo app.html, al ejecutar en un navegador carga los datos en consola haciendo fetch a https://k43hh.sse.codesandbox.io/graphql
 
-• Ejecuta directamente el servidor apollo en: https://38r91.sse.codesandbox.io/
-  aplicando el resolver del objeto teams:
+Ejecutar app.html alojado en codesanbox: https://509r0.csb.app/
+
+Ejecutar directamente graphiql desde el servidor apollo: https://k43hh.sse.codesandbox.io/graphql
   
-  query {
+query listTeams {
     teams {
       id
       institution
