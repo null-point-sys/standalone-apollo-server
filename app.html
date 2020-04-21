@@ -20,6 +20,20 @@
           color
           favorite
         } }`;
+      
+       /*
+       Query para graphiql directamente en : https://k43hh.sse.codesandbox.io/graphql
+       query listTeams {
+          teams {
+            id
+            institution
+            nickname
+            color
+            favorite
+          }
+        }
+       */
+      
         const renderPublications = ({ data }) => {console.log(data);
           const { getAllPublications = [] } = data;
           while (publicationsContainer.firstChild) {
@@ -51,7 +65,7 @@
               query: getpublicationsQuery(keyword)
             })
           };
-          fetch(`https://38r91.sse.codesandbox.io/`, options)
+          fetch(`https://k43hh.sse.codesandbox.io/graphql`, options)
             .then(res => res.json())
             .then(renderPublications);
           form.reset();
