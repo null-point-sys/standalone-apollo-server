@@ -34,6 +34,14 @@
         }
        */
       
+      /* Para hacer fetch a https://hv033.sse.codesandbox.io/graphql :
+         const getpublicationsQuery = () =>
+        `{ getAllPublications{ _id name category likes }  }`;
+      /*
+       Query para graphiql directamente en : 
+       query{ getAllPublications{ _id name category likes } }
+      */
+      
         const renderPublications = ({ data }) => {console.log(data);
           const { getAllPublications = [] } = data;
           while (publicationsContainer.firstChild) {
